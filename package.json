@@ -1,0 +1,12 @@
+{
+  "name": "kafka-consumer-template",
+  "version": "1.0.0",
+  "description": "kafka consumer template",
+  "main": "kafka-consumer.js",
+  "author": "Francisco Javier Barrena (fjbarrena@gmail.com) - @DogDeveloper at Twitter",
+  "license": "MIT",
+  "dependencies": {
+    "kafkajs": "^1.15.0",
+    "yargs": "^16.2.0"
+  }
+}
