@@ -47,10 +47,10 @@ const run = async() => {
 
 	await consumer.run({
 	  eachMessage: async ({ topic, partition, message }) => {
-      // PROCESS STUFF - Add here your code to process the incoming message
-	    console.log({
-	      value: JSON.stringify(message),
-	    })
+      	    // PROCESS STUFF - Add here your code to process the incoming message 
+            const receivedString = new Buffer.from(message.value).toString();
+	    
+            console.log(receivedString);
 	  },
 	});
 }
